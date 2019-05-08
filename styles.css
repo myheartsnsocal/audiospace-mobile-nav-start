@@ -69,6 +69,25 @@ section{ padding: 30px 15px; }
 	background: #f69331; 
 }
 
+#mainnav ul li a {
+	display:block;
+	background:#f69331;
+	color:#ebebeb;
+	font-weight:700;
+	font-size:36px;
+	line-height:50px;
+	text-decoration:none;
+	text-transform:uppercase;
+	text-align:right;
+	padding-right: 20px;
+	width:180px;
+	border-bottom: 1px solid #ca6a0c;
+}
+
+#mainnav ul li a:hover {
+	background:#40606f;
+}
+
 /******* Top section styles *******/
 #top { padding: 0; }
 
@@ -226,6 +245,36 @@ footer .space { color:#bdd4de; }
 	
 	header img {
 		width: 100%;
+	}
+	
+	#mobilenav {
+		display: none;
+	}
+	
+	#mainnav {
+		box-sizing: border-box;
+		position: static;
+		width: 100%;
+		margin-bottom: 20px;
+		border-top: none;
+		border-left: 1px solid #ca6a0c;
+	}
+	
+	#mainnav ul {
+		display: flex;
+	}
+	
+	#mainnav ul li {
+		flex: 1;
+	}
+	
+	#mainnav ul li a {
+		width: 100%;
+		box-sizing: border-box;
+		padding: 0;
+		text-align: center;
+		border-bottom: none;
+		border-right: 1px solid #ca6a0c;
 	}
 	
 	#top p, footer p {

@@ -9,6 +9,10 @@ h1, h2, h3, p, ul, ol {
 	padding: 0;
 }
 
+nav ul, nav ol {
+	list-style-type: none;
+}
+
 /********* End CSS Reset *********/
 
 body {
@@ -32,6 +36,37 @@ section{ padding: 30px 15px; }
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 	grid-gap: 30px;
+}
+
+/******* Navigation Styles ********/
+
+#navigation {
+	position: relative;
+}
+
+#mobilenav {
+	background: #f69331;
+	margin-bottom: 20px;
+	padding-right: 20px;
+}
+
+#mobilenav h2 {
+	text-align: right;
+	line-height: 50px;
+	color: #ebebeb;
+	font-size: 36px;
+}
+
+#mainnav {
+	width: 200px;
+	position: absolute;
+	top: 50px;
+	right: 0;
+	border-top: 1px solid #ca6a0c;
+}
+
+#mainnav ul {
+	background: #f69331; 
 }
 
 /******* Top section styles *******/
